@@ -1,4 +1,4 @@
-
+// for loop
  
 // while(count <=100){
 //     console.log(count)
@@ -48,6 +48,8 @@
 // }
 
 
+// function
+
 // function WelcomePersonToFES (name){
 //     console.log (`Welcome to frontend simplified, ${name}`)
 // }
@@ -93,6 +95,8 @@
 // }
 // console.log(convertcelciusToFahrenheit (0)) 
 
+
+// array 
 
 // let item1 = 20
 // let item2 = 30
@@ -148,8 +152,162 @@
 // console.log(goodGrades);
 
 
-let grades = [`FAIL`,]
+// let grades = [`FAIL`,]
 
-let goodGrades = grades.filter(element => element !== `FAIL` )
+// let goodGrades = grades.filter(element => element !== `FAIL` )
 
-console.log(goodGrades);
+// console.log(goodGrades);
+
+
+// let grades = [`A+`, `A`, `FAIL`]
+
+// for (let i = 0; i < grades.length; ++i) {
+//     console.log(grades[i] );
+// }
+
+
+
+// let grades= [`A+`, `A`, `FAIL`]
+
+// let goodGrades = []
+
+// for (let i = 0; i < grades.length; ++i) {
+//     if (grades[i] !== `FAIL`){
+//         goodGrades.push(grades[i]);
+//     }
+//  }   
+
+// console.log(goodGrades);  
+
+
+
+
+// let arr = [1, 4, 9, 16]
+
+// let newArray = arr.map((element) => {
+//     console.log(element)
+//     return undefined;
+// })
+
+// console.log(newArray)
+
+
+
+// let arr = [1, 4, 9, 16]
+
+// let newArray = arr.map(element => `dog`)
+
+// console.log(newArray)
+
+
+// let dollars = [1, 5, 10, 3];
+
+
+// // let cents = dollars.map(element =>  element * 100)
+
+// // console.log(cents)
+
+
+// let cents = [];
+
+// for (let i = 0; i < dollars.length; ++i) {
+//     cents.push(dollars[i] * 100)
+// }
+
+// console.log(cents)
+
+// objects
+
+// let userFirstName = `David`
+// let userLastName = `bragg`
+// let userDiscord = `david Bragg#0001`
+// let userSubscriptionStatus = `VIP`
+
+// let user = {
+//     username: `david`,
+//     email: `david@frontend.com`,
+//     subscriptionStatus: `VIP`,
+//     discord: `david Bragg#0001`,
+//     lessonsCompleted: [0, 1]
+// }
+
+// console.log(user.username [0])
+// console.log(user.subscriptionStatus)
+// console.log(user.lessonsCompleted.map((elem) => elem * 2)  )
+
+// let users = [
+//     {
+//         username: `david`,
+//         email: `david@frontend.com`,
+//         password: `Test123`,
+//         subscriptionStatus: `VIP`,
+//         discord: `david Bragg#0001`,
+//         lessonsCompleted: [0, 1]
+//     },
+//     {
+//         username: `mitri`,
+//         email: `mitri@frontend.com`,
+//         password: `mitri123`, 
+//         subscriptionStatus: `VIP`,
+//         discord: `mitri#0001`,
+//         lessonsCompleted: [0, 1, 2, 3]
+//     }
+// ]
+
+// function login(email, password){
+//     for (let i = 0;  i < users.length; ++i){
+//       if (users[i].email === email);
+//         console.log(users[i])
+//         if (users[i].password === password) {
+//             console.log(`log the user in- the details are correct`)
+//         }
+//         else {
+//             console.log(`password is incorrect - try again`)
+//         }
+//         return;
+//     }  
+//     console.log(`could not find email that matches `)
+// }
+
+// login(`david@frontend.com`,`Test123` )
+
+
+
+// function regester( user) {
+//     user.push(user);
+// }
+
+// regester({  
+// username: `joshua`, 
+// email: `joshua@email.com`, 
+// password: `joshua101`, 
+// subscriptionStatus: `VIP`, 
+// discordId: `joshua#1000` , 
+// lessonsCompleted: [0, 1, 2, 3] 
+// });
+
+// console.log(users);
+
+
+// console.log(document.querySelector(`.title`));
+
+// console.log(document.getElementById(`title`))
+
+
+// document.querySelector(`.title`) .innerHTML =`frontend simplified`
+
+// document.querySelector(`.title`).style.fontSize = `16px`
+
+// function changeTitleToRed(){
+//     console.log(`clicked`);
+// }
+
+// function changeTitleToRed(){
+//     document.querySelector(".title").style.color =`red`
+
+// }
+
+
+function toggleDarkMode() {
+document.querySelector(`body`).classList.toggle("dark-theme");
+}
